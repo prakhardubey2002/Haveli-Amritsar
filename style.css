@@ -36,7 +36,12 @@ html {
     align-items: center;
     padding: 1rem 1rem;
 }
-
+.body .sidenav .top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .body .sidenav .top img {
     max-width: 150px;
 }
@@ -46,12 +51,35 @@ html {
     line-height: 1.1;
     color: var(--Secondary);
 }
-
+.body .sidenav .top .location{
+    border: 1px solid var(--Secondary);
+}
+.body .sidenav .top .location{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+}
+.body .sidenav .top .location legend{
+    text-transform: uppercase;
+    width: auto;
+    margin: 0;
+    border: 0;
+    text-align: center;
+    font-size: 14px;
+    color: #636363;
+}
+.body .sidenav .top .location iframe{
+    max-width: 90%;
+    height: 160px;
+    object-fit: contain;
+}
 .body .sidenav .bottom {
     height: 50%;
     width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
 }
 
 .body .sidenav .bottom .navelements {
@@ -86,7 +114,6 @@ html {
 .body .main {
     width: 80vw;
     height: 100vh;
-    /* background-color: #636368; */
     overflow: hidden;
 }
 

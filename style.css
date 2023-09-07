@@ -119,7 +119,7 @@ html {
 
 .swiper-container {
     width: 100%;
-    height: 90vh;
+    height: 88vh;
 }
 .swiper-container2{
     width: 100%;
@@ -165,4 +165,91 @@ html {
 .swiper-container  .swiper-slide img {
     width: 100%;
     height: 100%;
+}
+.topnav{
+    display: none;
+}
+.footer{
+    display: none;
+}
+/* Resposive Query */
+@media (max-width: 1024px) {
+    .body{
+        display: flex;
+        flex-direction: column;
+    }
+    .body .sidenav {
+        display: none;
+    }
+    .body .main{
+        min-width: 100vw;
+        height: 80vh;
+        position: relative;
+    }
+    .swiper-container{
+        height: 60vh;
+        
+    }
+    .swiper-container2{
+        height: 10vh;
+        position: absolute;
+        bottom: 0;
+        
+
+    }
+    .topnav{
+        display: block;
+        height: 15vh;
+    }
+    .topnav .top{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.2rem 0;
+    }
+    .topnav img{
+        max-width: 40%;
+        max-height: 8vh;
+       
+    }
+    .topnav{
+        display: flex;
+        flex-direction: column;
+    }
+    .topnav .bottom{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .topnav .bottom .navelements{
+        font-size: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-decoration: none;
+        padding: 0.4rem;
+        color: var(--Secondary);
+    
+      border-left: 1px solid #ebdfbd;
+    }
+    .swiper-container2 .swiper-slide .feedback{
+        padding: 0.4rem;
+    }
+    .topnav .bottom .navelements:first-child{
+        border-left: 0px;
+    }
+    .footer{
+        display: block;
+        height: 5vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer .elements{
+        width: fit-content +5%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 1rem;
+    }
 }
